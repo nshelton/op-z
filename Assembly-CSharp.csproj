@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{56C85E55-A591-B639-BF02-B01EADDF45ED}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_6;UNITY_5_6;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;ENABLE_RUNTIME_GI;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_NETWORK;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_IOS_NATIVE_CRASH_REPORTING;PLAYERCONNECTION_LISTENS_FIXED_PORT;DEBUGGER_LISTENS_FIXED_PORT;PLATFORM_SUPPORTS_ADS_ID;SUPPORT_ENVIRONMENT_VARIABLES;PLATFORM_SUPPORTS_PROFILER;PLATFORM_HAS_NO_SUPPORT_FOR_BUCKET_ALLOCATOR;STRICTCPP_NEW_DELETE_SIGNATURES;HAS_NEON_SKINNIG;UNITY_GFX_USE_PLATFORM_VSYNC;UNITY_INPUT_SIMULATE_EVENTS;PLATFORM_ALWAYS_USES_STDOUT_FOR_LOG;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;UNITY_IOS;UNITY_IPHONE;UNITY_IPHONE_API;SUPPORT_MULTIPLE_DISPLAYS;ENABLE_IL2CPP;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_IOS_ON_DEMAND_RESOURCES;ENABLE_IOS_APP_SLICING;UNITY_HAS_GOOGLEVR</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity/Hub/Editor/5.6.6f2/Unity.app/Contents/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity/Hub/Editor/5.6.6f2/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Bezier\EvenOddFill.cs" />
+     <Compile Include="Assets\Bezier\Handle.cs" />
+     <Compile Include="Assets\Bezier\Internals\Curve.cs" />
+     <Compile Include="Assets\Bezier\Internals\Triangulator.cs" />
+     <Compile Include="Assets\Bezier\Shape.cs" />
+     <Compile Include="Assets\Kino\AsciiArtFx\AsciiArtFx.cs" />
+     <Compile Include="Assets\Kino\Binary\Binary.cs" />
+     <Compile Include="Assets\Kino\Bloom\Bloom.cs" />
+     <Compile Include="Assets\Kino\Bokeh\Bokeh.cs" />
+     <Compile Include="Assets\Kino\Contour\Contour.cs" />
+     <Compile Include="Assets\Kino\Datamosh\Datamosh.cs" />
+     <Compile Include="Assets\Kino\Feedback\Feedback.cs" />
+     <Compile Include="Assets\Kino\Fringe\Fringe.cs" />
+     <Compile Include="Assets\Kino\Glitch\AnalogGlitch.cs" />
+     <Compile Include="Assets\Kino\Glitch\DigitalGlitch.cs" />
+     <Compile Include="Assets\Kino\Isoline\Isoline.cs" />
+     <Compile Include="Assets\Kino\Isoline\IsolineScroller.cs" />
+     <Compile Include="Assets\Kino\Mirror\Mirror.cs" />
+     <Compile Include="Assets\Kino\Motion\Motion.cs" />
+     <Compile Include="Assets\Kino\Motion\Script\FrameBlendingFilter.cs" />
+     <Compile Include="Assets\Kino\Motion\Script\ReconstructionFilter.cs" />
+     <Compile Include="Assets\Kino\Ramp\Ramp.cs" />
+     <Compile Include="Assets\Kino\Tube\Tube.cs" />
+     <Compile Include="Assets\Kino\Vignette\Vignette.cs" />
+     <Compile Include="Assets\Kino\Vision\Script\ArrowArray.cs" />
+     <Compile Include="Assets\Kino\Vision\Vision.cs" />
+     <Compile Include="Assets\Klak\Extension\MaterialExtension.cs" />
+     <Compile Include="Assets\Klak\Extension\VectorMathExtension.cs" />
+     <Compile Include="Assets\Klak\Math\BasicMath.cs" />
+     <Compile Include="Assets\Klak\Math\Interpolator.cs" />
+     <Compile Include="Assets\Klak\Math\NoiseGenerator.cs" />
+     <Compile Include="Assets\Klak\Math\Perlin.cs" />
+     <Compile Include="Assets\Klak\Math\Tween.cs" />
+     <Compile Include="Assets\Klak\Math\XXHash.cs" />
+     <Compile Include="Assets\Klak\Midi\KnobInput.cs" />
+     <Compile Include="Assets\Klak\Midi\KnobOut.cs" />
+     <Compile Include="Assets\Klak\Midi\NoteInput.cs" />
+     <Compile Include="Assets\Klak\Midi\NoteOut.cs" />
+     <Compile Include="Assets\Klak\Midi\SequencerInput.cs" />
+     <Compile Include="Assets\Klak\Midi\SequencerOut.cs" />
+     <Compile Include="Assets\Klak\Midi\VideolabInput.cs" />
+     <Compile Include="Assets\Klak\Motion\BrownianMotion.cs" />
+     <Compile Include="Assets\Klak\Motion\CollisionDispatch.cs" />
+     <Compile Include="Assets\Klak\Motion\ConstantMotion.cs" />
+     <Compile Include="Assets\Klak\Motion\SmoothFollow.cs" />
+     <Compile Include="Assets\Klak\Videolab\WebcamManagerOut.cs" />
+     <Compile Include="Assets\Klak\Wiring\Basic\Accumulator.cs" />
+     <Compile Include="Assets\Klak\Wiring\Basic\AxisRotation.cs" />
+     <Compile Include="Assets\Klak\Wiring\Basic\ColorRamp.cs" />
+     <Compile Include="Assets\Klak\Wiring\Basic\ComponentVector.cs" />
+     <Compile Include="Assets\Klak\Wiring\Basic\EulerRotation.cs" />
+     <Compile Include="Assets\Klak\Wiring\Basic\FloatAnimation.cs" />
+     <Compile Include="Assets\Klak\Wiring\Basic\FromToVector.cs" />
+     <Compile Include="Assets\Klak\Wiring\Basic\HSBColor.cs" />
+     <Compile Include="Assets\Klak\Wiring\Basic\Vector.cs" />
+     <Compile Include="Assets\Klak\Wiring\Filter\BangFilter.cs" />
+     <Compile Include="Assets\Klak\Wiring\Filter\Delay.cs" />
+     <Compile Include="Assets\Klak\Wiring\Filter\FloatFilter.cs" />
+     <Compile Include="Assets\Klak\Wiring\Filter\FloatMix.cs" />
+     <Compile Include="Assets\Klak\Wiring\Filter\FloatVectorMix.cs" />
+     <Compile Include="Assets\Klak\Wiring\Filter\Repeat.cs" />
+     <Compile Include="Assets\Klak\Wiring\Filter\RotationMix.cs" />
+     <Compile Include="Assets\Klak\Wiring\Filter\Threshold.cs" />
+     <Compile Include="Assets\Klak\Wiring\Filter\Toggle.cs" />
+     <Compile Include="Assets\Klak\Wiring\Filter\ToggleFour.cs" />
+     <Compile Include="Assets\Klak\Wiring\Filter\VectorComponents.cs" />
+     <Compile Include="Assets\Klak\Wiring\Filter\VectorMix.cs" />
+     <Compile Include="Assets\Klak\Wiring\Input\AxisInput.cs" />
+     <Compile Include="Assets\Klak\Wiring\Input\ButtonInput.cs" />
+     <Compile Include="Assets\Klak\Wiring\Input\ColliderInput.cs" />
+     <Compile Include="Assets\Klak\Wiring\Input\DragEventInput.cs" />
+     <Compile Include="Assets\Klak\Wiring\Input\FloatInput.cs" />
+     <Compile Include="Assets\Klak\Wiring\Input\FloatValue.cs" />
+     <Compile Include="Assets\Klak\Wiring\Input\KeyInput.cs" />
+     <Compile Include="Assets\Klak\Wiring\Input\MouseButtonInput.cs" />
+     <Compile Include="Assets\Klak\Wiring\Input\MousePositionInput.cs" />
+     <Compile Include="Assets\Klak\Wiring\Input\Noise.cs" />
+     <Compile Include="Assets\Klak\Wiring\Input\RandomValue.cs" />
+     <Compile Include="Assets\Klak\Wiring\Input\Starter.cs" />
+     <Compile Include="Assets\Klak\Wiring\Input\TapEventInput.cs" />
+     <Compile Include="Assets\Klak\Wiring\Input\TransformInput.cs" />
+     <Compile Include="Assets\Klak\Wiring\Input\VectorInput.cs" />
+     <Compile Include="Assets\Klak\Wiring\Input\VectorValue.cs" />
+     <Compile Include="Assets\Klak\Wiring\Output\ActiveStatusOut.cs" />
+     <Compile Include="Assets\Klak\Wiring\Output\AnimatorOut.cs" />
+     <Compile Include="Assets\Klak\Wiring\Output\ColorOut.cs" />
+     <Compile Include="Assets\Klak\Wiring\Output\ConsoleOut.cs" />
+     <Compile Include="Assets\Klak\Wiring\Output\EventOut.cs" />
+     <Compile Include="Assets\Klak\Wiring\Output\FloatOut.cs" />
+     <Compile Include="Assets\Klak\Wiring\Output\MaterialColorOut.cs" />
+     <Compile Include="Assets\Klak\Wiring\Output\MaterialFloatOut.cs" />
+     <Compile Include="Assets\Klak\Wiring\Output\MaterialVectorOut.cs" />
+     <Compile Include="Assets\Klak\Wiring\Output\ParticleSystemOut.cs" />
+     <Compile Include="Assets\Klak\Wiring\Output\RectTransformOut.cs" />
+     <Compile Include="Assets\Klak\Wiring\Output\RigidbodyOut.cs" />
+     <Compile Include="Assets\Klak\Wiring\Output\RotationOut.cs" />
+     <Compile Include="Assets\Klak\Wiring\Output\StringOut.cs" />
+     <Compile Include="Assets\Klak\Wiring\Output\SystemPropertyOut.cs" />
+     <Compile Include="Assets\Klak\Wiring\Output\TransformOut.cs" />
+     <Compile Include="Assets\Klak\Wiring\Output\VectorOut.cs" />
+     <Compile Include="Assets\Klak\Wiring\System\NodeBase.cs" />
+     <Compile Include="Assets\Klak\Wiring\System\Patch.cs" />
+     <Compile Include="Assets\Kvant\Deform\GenericDeformer.cs" />
+     <Compile Include="Assets\Kvant\Deform\Math.cs" />
+     <Compile Include="Assets\Kvant\Deform\NormalDeformer.cs" />
+     <Compile Include="Assets\Kvant\Spray\Scripts\BulkMesh.cs" />
+     <Compile Include="Assets\Kvant\Spray\Spray.cs" />
+     <Compile Include="Assets\Kvant\Stream\Stream.cs" />
+     <Compile Include="Assets\Kvant\Swarm\Swarm.cs" />
+     <Compile Include="Assets\Kvant\Wall\Scripts\BulkMesh.cs" />
+     <Compile Include="Assets\Kvant\Wall\Wall.cs" />
+     <Compile Include="Assets\Kvant\Wall\WallScroller.cs" />
+     <Compile Include="Assets\Kvant\Warp\Script\WarpTemplate.cs" />
+     <Compile Include="Assets\Kvant\Warp\Warp.cs" />
+     <Compile Include="Assets\Kvant\Wig\WigController.cs" />
+     <Compile Include="Assets\Kvant\Wig\WigTemplate.cs" />
+     <Compile Include="Assets\MidiJack\Midi.cs" />
+     <Compile Include="Assets\MidiJack\MidiDestination.cs" />
+     <Compile Include="Assets\MidiJack\MidiDriver.cs" />
+     <Compile Include="Assets\MidiJack\MidiEndpoint.cs" />
+     <Compile Include="Assets\MidiJack\MidiMap.cs" />
+     <Compile Include="Assets\MidiJack\MidiMaster.cs" />
+     <Compile Include="Assets\MidiJack\MidiSource.cs" />
+     <Compile Include="Assets\Reaktion\SelfDestruction.cs" />
+     <Compile Include="Assets\Reaktion\Spawner.cs" />
+     <Compile Include="Assets\SHELTRON\FpsCounter.cs" />
+     <Compile Include="Assets\Skinner\Internal\CullingStateController.cs" />
+     <Compile Include="Assets\Skinner\Internal\SkinnerGlitchTemplate.cs" />
+     <Compile Include="Assets\Skinner\Internal\SkinnerInternals.cs" />
+     <Compile Include="Assets\Skinner\SkinnerDebug.cs" />
+     <Compile Include="Assets\Skinner\SkinnerGlitch.cs" />
+     <Compile Include="Assets\Skinner\SkinnerModel.cs" />
+     <Compile Include="Assets\Skinner\SkinnerParticle.cs" />
+     <Compile Include="Assets\Skinner\SkinnerParticleTemplate.cs" />
+     <Compile Include="Assets\Skinner\SkinnerSource.cs" />
+     <Compile Include="Assets\Skinner\SkinnerTrail.cs" />
+     <Compile Include="Assets\Skinner\SkinnerTrailTemplate.cs" />
+     <Compile Include="Assets\Videolab\Degrade\Degrade.cs" />
+     <Compile Include="Assets\Videolab\Halftone\Halftone.cs" />
+     <Compile Include="Assets\Videolab\IK\IKJoint.cs" />
+     <Compile Include="Assets\Videolab\IK\IKSolver.cs" />
+     <Compile Include="Assets\Videolab\Photomatic\PhotomaticEffect.cs" />
+     <Compile Include="Assets\Videolab\Scripts\DollyZoom.cs" />
+     <Compile Include="Assets\Videolab\Scripts\RadioGroupMember.cs" />
+     <Compile Include="Assets\Videolab\Toy\Toy.cs" />
+     <Compile Include="Assets\Videolab\Videopak\VideopakManager.cs" />
+     <Compile Include="Assets\Videolab\WebcamManager\WebcamManager.cs" />
+     <None Include="Assets\Kvant\Wall\Shaders\Debug.shader" />
+     <None Include="Assets\Kvant\Swarm\Shaders\SimplexNoiseGrad3D.cginc" />
+     <None Include="Assets\Kino\Bokeh\Shader\DiskKernel.cginc" />
+     <None Include="Assets\Kvant\Wig\Shader\Common.cginc" />
+     <None Include="Assets\Videolab\Photomatic\Photomatic.shader" />
+     <None Include="Assets\Skinner\Shader\GlitchKernels.cginc" />
+     <None Include="Assets\Kvant\Wall\Shaders\SimplexNoiseExt3D.cginc" />
+     <None Include="Assets\Kino\Bloom\Shader\Bloom.shader" />
+     <None Include="Assets\Skinner\Shader\ParticleMotion.cginc" />
+     <None Include="Assets\Skinner\Shader\Replacement.cginc" />
+     <None Include="Assets\Kino\Bloom\Shader\Bloom.cginc" />
+     <None Include="Assets\Kino\Bokeh\Shader\Debug.cginc" />
+     <None Include="Assets\Skinner\Shader\Common.cginc" />
+     <None Include="Assets\Kvant\Stream\Shaders\ClassicNoise3D.cginc" />
+     <None Include="Assets\SHELTRON\TunnelKernel.shader" />
+     <None Include="Assets\Kino\Glitch\Shader\AnalogGlitch.shader" />
+     <None Include="Assets\Videolab\Toy\Toy.shader" />
+     <None Include="Assets\Kvant\Spray\Shaders\Opaque.shader" />
+     <None Include="Assets\Videolab\Degrade\Degrade.shader" />
+     <None Include="Assets\Kino\Motion\Shader\Prefilter.cginc" />
+     <None Include="Assets\Kino\Motion\Shader\Reconstruction.shader" />
+     <None Include="Assets\Skinner\Shader\TrailMotion.cginc" />
+     <None Include="Assets\Kino\Glitch\Shader\DigitalGlitch.shader" />
+     <None Include="Assets\Kvant\Wall\Shaders\Kernel.shader" />
+     <None Include="Assets\Kino\Motion\Shader\Reconstruction.cginc" />
+     <None Include="Assets\Kino\Motion\Shader\FrameBlending.shader" />
+     <None Include="Assets\Kino\Fringe\Shader\Fringe.shader" />
+     <None Include="Assets\Kvant\Wig\Shader\Kernels.shader" />
+     <None Include="Assets\Kino\Motion\Shader\Common.cginc" />
+     <None Include="Assets\Kvant\Wig\Shader\Filament.shader" />
+     <None Include="Assets\Skinner\Shader\GlitchKernels.shader" />
+     <None Include="Assets\Kino\Bokeh\Shader\DiskBlur.cginc" />
+     <None Include="Assets\Kino\Bokeh\Shader\Bokeh.shader" />
+     <None Include="Assets\Kvant\Warp\Shader\Motion.cginc" />
+     <None Include="Assets\Kino\Isoline\Shader\SimplexNoise3D.cginc" />
+     <None Include="Assets\Kvant\Wig\Shader\SimplexNoiseGrad3D.cginc" />
+     <None Include="Assets\Kvant\Warp\Shader\Surface.cginc" />
+     <None Include="Assets\Skinner\Shader\TrailKernels.shader" />
+     <None Include="Assets\Kino\Mirror\Shader\Mirror.shader" />
+     <None Include="Assets\Skinner\Shader\GlitchSurface.cginc" />
+     <None Include="Assets\Kino\Feedback\Shader\Feedback.shader" />
+     <None Include="Assets\Kino\Vision\Shader\Normals.cginc" />
+     <None Include="Assets\Kino\Isoline\Shader\Isoline.shader" />
+     <None Include="Assets\Kvant\Stream\Shaders\Line.shader" />
+     <None Include="Assets\Skinner\Shader\TrailSurface.shader" />
+     <None Include="Assets\Skinner\Shader\ParticleSurfaceStandard.shader" />
+     <None Include="Assets\Kvant\Wig\Shader\Motion.cginc" />
+     <None Include="Assets\Kino\Bokeh\Shader\Composition.cginc" />
+     <None Include="Assets\Skinner\Shader\TrailSurface.cginc" />
+     <None Include="Assets\Skinner\Shader\ParticleSurfaceTwoSided.shader" />
+     <None Include="Assets\Skinner\Shader\Debug.shader" />
+     <None Include="Assets\Kino\Vision\Shader\MotionVectors.cginc" />
+     <None Include="Assets\Kvant\Spray\Shaders\Kernel.shader" />
+     <None Include="Assets\Kvant\Wig\Shader\Filament.cginc" />
+     <None Include="Assets\Skinner\Shader\TrailKernels.cginc" />
+     <None Include="Assets\Kino\Datamosh\Shader\Datamosh.shader" />
+     <None Include="Assets\Skinner\Shader\ParticleSurface.cginc" />
+     <None Include="Assets\Kvant\Swarm\Shaders\Kernel.shader" />
+     <None Include="Assets\Kvant\Warp\Shader\Surface.shader" />
+     <None Include="Assets\Kvant\Spray\Shaders\Common.cginc" />
+     <None Include="Assets\Kino\Vision\Shader\Vision.shader" />
+     <None Include="Assets\Kvant\Stream\Shaders\Debug.shader" />
+     <None Include="Assets\Kino\Vignette\Shader\Vignette.shader" />
+     <None Include="Assets\Kino\Contour\Shader\Contour.shader" />
+     <None Include="Assets\Kvant\Wall\Shaders\Surface.shader" />
+     <None Include="Assets\Kvant\Spray\Shaders\Unlit.shader" />
+     <None Include="Assets\Kino\Bokeh\Shader\Prefilter.cginc" />
+     <None Include="Assets\Skinner\Shader\SourcePlaceholder.shader" />
+     <None Include="Assets\Kvant\Spray\Shaders\Debug.shader" />
+     <None Include="Assets\Skinner\Shader\ParticleKernels.shader" />
+     <None Include="Assets\Kino\Vision\Shader\Common.cginc" />
+     <None Include="Assets\Skinner\Shader\Replacement.shader" />
+     <None Include="Assets\Skinner\Shader\GlitchSurface.shader" />
+     <None Include="Assets\Videolab\Halftone\Halftone.shader" />
+     <None Include="Assets\Kino\Bokeh\Shader\Common.cginc" />
+     <None Include="Assets\Kvant\Swarm\Shaders\Surface.shader" />
+     <None Include="Assets\Skinner\Shader\ParticleKernels.cginc" />
+     <None Include="Assets\Kino\Ramp\Shader\Ramp.shader" />
+     <None Include="Assets\Kino\AsciiArtFx\AsciiArtFx.shader" />
+     <None Include="Assets\Kvant\Stream\Shaders\Kernel.shader" />
+     <None Include="Assets\Kvant\Warp\Shader\Common.cginc" />
+     <None Include="Assets\Kino\Vision\Shader\Depth.cginc" />
+     <None Include="Assets\Kvant\Spray\Shaders\SimplexNoiseGrad3D.cginc" />
+     <None Include="Assets\Kino\Tube\Shader\TubeFx.shader" />
+     <None Include="Assets\Kino\Binary\Shader\Binary.shader" />
+     <None Include="Assets\Skinner\Shader\SimplexNoiseGrad3D.cginc" />
+     <None Include="Assets\Skinner\Shader\Debug.cginc" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Hub/Editor/5.6.6f2/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity/Hub/Editor/5.6.6f2/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>/Applications/Unity/Hub/Editor/5.6.6f2/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>/Applications/Unity/Hub/Editor/5.6.6f2/Unity.app/Contents/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>/Applications/Unity/Hub/Editor/5.6.6f2/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>/Applications/Unity/Hub/Editor/5.6.6f2/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>/Applications/Unity/Hub/Editor/5.6.6f2/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
